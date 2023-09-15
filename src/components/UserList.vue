@@ -11,7 +11,7 @@ export default {
 
         const loadUsers = async () => {
             try {
-                const response = await axios.get('http://13.229.125.65:3000/users/search_users');
+                const response = await axios.get('http://13.228.225.243:3000/users/search_users');
                 users.value = response.data.data;
                 console.log('run')
             } catch (error) {
