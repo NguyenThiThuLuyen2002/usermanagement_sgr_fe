@@ -11,7 +11,7 @@ export const useAuthStore = defineStore('auth', {
     actions: {
         async login(username, password) {
             try {
-                const { data: respData } = await axios.post('http://localhost:3001/auth/login', {
+                const { data: respData } = await axios.post('http://13.229.125.65:3000/auth/login', {
                     username: username,
                     password: password,
                 })
